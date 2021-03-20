@@ -1,364 +1,71 @@
-
-FBLA Game and Sim 2021/Library/ArtifactDB
-
-FBLA Game and Sim 2021/Library/EditorInstance.json
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Icons/README.md
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Layouts/AlertBox.uxml
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Layouts/BaseChangeListElement.uxml
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Layouts/ChangesGroupHeader.uxml
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Layouts/ChangesTabPageView.uxml
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Layouts/ErrorPageView.uxml
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Layouts/HistoryEntryComponent.uxml
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Layouts/HistoryTabPageView.uxml
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Layouts/ListNotice.uxml
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Layouts/main-window.uxml
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Layouts/MainPageView.uxml
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Layouts/Paginator.uxml
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Layouts/ProgressView.uxml
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Layouts/StartPageView.uxml
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Layouts/TopBar.uxml
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/README.md
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/StringAssets.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Styles/AlertBox.uss
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Styles/BaseChangeListElement.uss
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Styles/BetterTextField.uss
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Styles/ChangesGroupHeader.uss
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Styles/ChangesTabPageView.uss
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Styles/FloatingDialogue.uss
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Styles/FloatingMenu.uss
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Styles/FloatingMenuItem.uss
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Styles/HistoryEntryComponent.uss
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Styles/IconButton.uss
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Styles/IconTextButton.uss
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Styles/ListNotice.uss
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Styles/MainPageView.uss
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Styles/Paginator.uss
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Styles/ProgressView.uss
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Styles/SearchBar.uss
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Styles/StartPageView.uss
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Styles/styles.uss
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Styles/TabView.uss
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Styles/TextButton.uss
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Styles/ToggleableChangeListElement.uss
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/Styles/TopBar.uss
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Assets/UiConstants.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Common/ArrayContainer.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Common/LocationAttribute.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Common/README.md
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Common/ScriptableObjectSingleton.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Common/SerializableDictionary.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Common/StringArrayContainer.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/AdapterListView.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/AlertBox.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/BetterTextField.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/ChangeEntryGroup.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/ChangeListElements/BaseChangeListElement.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/ChangeListElements/ChangeListElement.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/ChangeListElements/ConflictedChangeListElement.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/ChangeListElements/HistoryChangeListElement.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/ChangeListElements/ToggleableChangeListElement.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/ChangesGroupHeader.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/ErrorPageView.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/HistoryEntryComponent.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/IconButton.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/IconTextButton.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/ListNotice.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/Menus/FloatingDialogue.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/Menus/FloatingMenu.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/Menus/FloatingMenuItem.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/PageComponent.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/Paginator.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/ProgressView.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/README.md
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/SearchBar.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/TabPageComponent.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/TabView.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/TextButton.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Components/TopBar.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Models/Api/ISourceControlProvider.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Models/ChangesModel.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Models/Enums/ProjectStatus.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Models/HistoryModel.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Models/IChangesModel.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Models/IHistoryModel.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Models/IMainModel.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Models/IModel.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Models/IStartModel.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Models/MainModel.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Models/Providers/Collab.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Models/README.md
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Models/StartModel.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Models/Structures/ChangeEntry.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Models/Structures/ErrorInfo.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Models/Structures/HistoryEntry.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Models/Structures/IChangeEntry.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Models/Structures/IChangeEntryData.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Models/Structures/IErrorInfo.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Models/Structures/IHistoryEntry.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Models/Structures/IProgressInfo.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Models/Structures/ProgressInfo.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Presenters/ChangesPresenter.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Presenters/HistoryPresenter.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Presenters/IChangesPresenter.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Presenters/IHistoryPresenter.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Presenters/IMainPresenter.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Presenters/IPresenter.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Presenters/IStartPresenter.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Presenters/MainPresenter.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Presenters/README.md
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Presenters/StartPresenter.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Properties/AssemblyInfo.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/README.md
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Settings/CollabSetting.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Settings/CollabSettings.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Settings/CollabSettingsManager.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Settings/CollabSettingsProvider.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Settings/README.md
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Unity.CollabProxy.Editor.asmdef
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/UserInterface/Bootstrap.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/UserInterface/CollaborateWindow.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/UserInterface/README.md
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/UserInterface/ToolbarButton.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/UserInterface/WindowCache.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Utilities/ExtensionMethods.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Utilities/MenuUtilities.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Utilities/OpenLinksUtility.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Utilities/README.md
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Utilities/StringUtility.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Utilities/Threading.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Utilities/TimeStamp.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Views/Adapters/IAdapter.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Views/Adapters/IAdapterObserver.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Views/Adapters/ListAdapters/BaseListAdapter.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Views/Adapters/ListAdapters/ConflictedChangeListAdapter.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Views/Adapters/ListAdapters/HistoryEntryChangeListAdapter.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Views/Adapters/ListAdapters/ToggleableChangeListAdapter.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Views/ChangesTabPageView.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Views/HistoryTabPageView.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Views/IChangesView.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Views/IHistoryView.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Views/IMainView.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Views/IStartView.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Views/IView.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Views/MainPageView.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Views/README.md
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Editor/Views/StartPageView.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/LICENSE.md
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/package.json
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/README.md
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/.tests.json
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/Models/ChangesModelTests.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/Models/HistoryModelTests.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/Models/Providers/MockSourceControlProvider.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/Models/StartModelTests.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/Models/TestChangesModel.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/Models/TestHistoryModel.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/Models/TestMainModel.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/Models/TestSourceControlProvider.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/Models/TestStartModel.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/Models/TestWindowCache.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/Presenters/ChangesPresenterTests.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/Presenters/HistoryPresenterTests.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/Presenters/MainPresenterTests.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/Presenters/StartPresenterTests.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/Presenters/TestChangesView.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/Presenters/TestHistoryView.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/Presenters/TestMainView.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/Presenters/TestStartView.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/Scenario/AsyncToCoroutine.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/Scenario/BasicTests.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/ScenarioTestBase.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/TestConstants.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/TestHelpers.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/TestWindow.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/UITestHelpers.cs
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/Editor/Unity.CollabProxy.EditorTests.asmdef
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Tests/README.md
-
-FBLA Game and Sim 2021/Library/PackageCache/com.unity.collab-proxy\@1.3.9/Third Party Notices.md
-
-FBLA Game and Sim 2021/Library/PackageManager/ProjectCache
-
-FBLA Game and Sim 2021/Library/PackageManager/ProjectCache.md5
-
-FBLA Game and Sim 2021/Library/SourceAssetDB
-
-FBLA Game and Sim 2021/Library/SourceAssetDB-lock
-
-FBLA Game and Sim 2021/Logs/shadercompiler-UnityShaderCompiler.exe0.log
-
-FBLA Game and Sim 2021/Temp/UnityLockfile
-
-FBLA Game and Sim 2021/Temp/workerlic
+# This .gitignore file should be placed at the root of your Unity project directory
+#
+# Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
+#
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# MemoryCaptures can get excessive in size.
+# They also could contain extremely sensitive data
+/[Mm]emoryCaptures/
+
+# Asset meta data should only be ignored when the corresponding asset is also ignored
+!/[Aa]ssets/**/*.meta
+
+# Uncomment this line if you wish to ignore the asset store tools plugin
+# /[Aa]ssets/AssetStoreTools*
+
+# Autogenerated Jetbrains Rider plugin
+/[Aa]ssets/Plugins/Editor/JetBrains*
+
+# Visual Studio cache directory
+.vs/
+
+# Gradle cache directory
+.gradle/
+
+# Autogenerated VS/MD/Consulo solution and project files
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity3D generated meta files
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Unity3D generated file on crash reports
+sysinfo.txt
+
+# Builds
+*.apk
+*.aab
+*.unitypackage
+
+# Crashlytics generated file
+crashlytics-build.properties
+
+# Packed Addressables
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+
+# Temporary auto-generated Android Assets
+/[Aa]ssets/[Ss]treamingAssets/aa.meta
+/[Aa]ssets/[Ss]treamingAssets/aa/*
