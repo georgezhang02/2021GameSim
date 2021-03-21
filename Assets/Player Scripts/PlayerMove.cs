@@ -5,14 +5,18 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
 
-    bool isRolling = false;
-    public float duration;
-    float scale;
+    private bool isRolling = false;
+    private float duration;
+    private float scale;
+
+    public int[] sides;
+
     // Start is called before the first frame update
     void Start()
     {
         scale = transform.localScale.x / 2;
         duration = 0.5f;
+        sides = new int[] { 0, 1, 2, 3, 4, 5 };
     }
 
     // Update is called once per frame
@@ -22,26 +26,31 @@ public class PlayerMove : MonoBehaviour
 
         if (!isRolling)
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.UpArrow))
             {
+                int[] sideRot = new int[] { 0, 3, 5,1 };
                 StartCoroutine(rotateAbout(transform.position + scale * Vector3.forward,
-                    Vector3.right, 90f));
+                    Vector3.right, 90f, sideRot));
             }
-            else if (Input.GetKeyDown(KeyCode.DownArrow))
-            {
+            else if (Input.GetKey(KeyCode.DownArrow))
+            { 
+                int[] sideRot = new int[] { 0, 1, 5, 3 };
                 StartCoroutine(rotateAbout(transform.position + scale * Vector3.back,
-                    Vector3.right, -90f));
+                        Vector3.right, -90f, sideRot));
+                
             }
-            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            else if (Input.GetKey(KeyCode.LeftArrow))
             {
+                int[] sideRot = new int[] { 0, 4, 5, 2 };
                 StartCoroutine(rotateAbout(transform.position + scale * Vector3.left,
-                    Vector3.forward, 90f));
+                    Vector3.forward, 90f, sideRot));
+                
             }
-            else if (Input.GetKeyDown(KeyCode.RightArrow))
+            else if (Input.GetKey(KeyCode.RightArrow))
             {
-                Debug.Log(" Pressed");
+                int[] sideRot = new int[] { 0, 2, 5, 4 };
                 StartCoroutine(rotateAbout(transform.position + scale * Vector3.right,
-                    Vector3.forward, -90f));
+                        Vector3.forward, -90f, sideRot));
                 
             }
            
@@ -50,7 +59,7 @@ public class PlayerMove : MonoBehaviour
     }
 
 
-    IEnumerator rotateAbout(Vector3 pivot, Vector3 axis, float angle)
+    IEnumerator rotateAbout(Vector3 pivot, Vector3 axis, float angle, int[]sideRot)
     {
         isRolling = true;
 
@@ -58,9 +67,6 @@ public class PlayerMove : MonoBehaviour
 
 
         float timeElapsed = 0f;
-
-        
-        
 
          while (timeElapsed < duration)
          {
@@ -72,15 +78,24 @@ public class PlayerMove : MonoBehaviour
 
 
 
-        transform.eulerAngles = new Vector3(90f * Mathf.Round(transform.rotation.x / 90f),
-                                       Mathf.Round(transform.rotation.y / 90f),
-                                       Mathf.Round(transform.rotation.z / 90f));
+        transform.eulerAngles = new Vector3(90f * Mathf.Round(transform.eulerAngles.x / 90f),
+                                       90f * Mathf.Round(transform.eulerAngles.y / 90f),
+                                       90f * Mathf.Round(transform.eulerAngles.z / 90f));
 
         transform.position = new Vector3(Mathf.Round(transform.position.x),
-                                       0.5f,
+                                       0f,
                                        Mathf.Round(transform.position.z));
 
         isRolling = false;
+
+        int temp = sides[sideRot[0]];
+
+        for (int i = 3; i>=0; i--)
+        {
+            sides[sideRot[(i + 1) % 4]] = sides[sideRot[i]];
+        }
+        sides[sideRot[1]] = temp;
+
 
     }
 }
