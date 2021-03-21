@@ -11,6 +11,8 @@ public class PlayerMove : MonoBehaviour
 
     public int[] sides;
 
+    public int[] colors;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -97,5 +99,10 @@ public class PlayerMove : MonoBehaviour
         sides[sideRot[1]] = temp;
 
 
+    }
+
+    void getColor(int side)
+    {
+        return color[sides[side]];
     }
 }
