@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
 
+    // Limit frame rate
+    void Start()
+    {
+        Application.targetFrameRate = 60;
+    }
+
     void Update()
     {
         // Escape key to quit
@@ -21,7 +27,7 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-    
+
     // Quit button
     public void doQuit()
     {
