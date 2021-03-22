@@ -10,9 +10,12 @@ public class MainMenu : MonoBehaviour
     {
         // Escape key to quit
         if (Input.GetKey("escape"))
+        {
             Application.Quit();
+            Debug.Log("Quit");
+        }
     }
-    
+
     // Play button
     public void PlayGame()
     {
