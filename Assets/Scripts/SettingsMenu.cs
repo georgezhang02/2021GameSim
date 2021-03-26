@@ -1,12 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using TMPro;
+using UnityEngine.UI;
 
 public class SettingsMenu : MonoBehaviour
 {
     public TMP_Dropdown resolutionDropdown;
     List<string> options;
+
+    public AudioMixer musicMixer;
+    public AudioMixer sfxMixer;
+
+    public Slider musicSlider;
+    public Slider sfxSlider;
 
     void Start()
     {
@@ -41,6 +49,11 @@ public class SettingsMenu : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentIndex;
         resolutionDropdown.RefreshShownValue();
+
+        // Import any saved volume
+        musicSlider.value = PlayerPrefs.GetFloat("music", 0.75f);
+        sfxSlider.value = PlayerPrefs.GetFloat("sfx", 0.75f);
+
     }
 
     // Set the resolution of the screen
@@ -59,9 +72,16 @@ public class SettingsMenu : MonoBehaviour
         Screen.fullScreen = isFullscreen;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void setMusic (float volume)
     {
-        
+        musicMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
+        PlayerPrefs.SetFloat("music", volume);
+
     }
+    public void setSFX(float volume)
+    {
+        sfxMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
+        PlayerPrefs.SetFloat("sfx", volume);
+    }
+
 }
