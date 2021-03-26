@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+    private GameScript playerState;
 
     private bool isRolling = false;
     private float duration;
@@ -15,13 +16,17 @@ public class PlayerMove : MonoBehaviour
 
     public Texture colors;
 
+    private int pressed;
 
     // Start is called before the first frame update
     void Start()
     {
         scale = transform.localScale.x / 2;
-        duration = 0.5f;
+        duration = 0.25f;
         sides = new int[] { 0, 1, 2, 3, 4, 5 };
+        pressed = -1;
+
+        playerState = this.GetComponent<GameScript>();
     }
 
     // Update is called once per frame
@@ -31,34 +36,38 @@ public class PlayerMove : MonoBehaviour
 
         if (!isRolling)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.UpArrow) || pressed == (int)KeyCode.UpArrow)
             {
                 int[] sideRot = new int[] { 0, 3, 5,1 };
                 StartCoroutine(rotateAbout(transform.position + scale * Vector3.forward,
                     Vector3.right, 90f, sideRot));
+                playerState.y--;
             }
-            else if (Input.GetKey(KeyCode.DownArrow))
+            else if (Input.GetKey(KeyCode.DownArrow) || pressed == (int)KeyCode.DownArrow)
             { 
                 int[] sideRot = new int[] { 0, 1, 5, 3 };
                 StartCoroutine(rotateAbout(transform.position + scale * Vector3.back,
                         Vector3.right, -90f, sideRot));
+                playerState.y++;
                 
             }
-            else if (Input.GetKey(KeyCode.LeftArrow))
+            else if (Input.GetKey(KeyCode.LeftArrow) || pressed == (int)KeyCode.LeftArrow)
             {
                 int[] sideRot = new int[] { 0, 4, 5, 2 };
                 StartCoroutine(rotateAbout(transform.position + scale * Vector3.left,
                     Vector3.forward, 90f, sideRot));
+                playerState.x--;
                 
             }
-            else if (Input.GetKey(KeyCode.RightArrow))
+            else if (Input.GetKey(KeyCode.RightArrow) || pressed == (int)KeyCode.RightArrow)
             {
                 int[] sideRot = new int[] { 0, 2, 5, 4 };
                 StartCoroutine(rotateAbout(transform.position + scale * Vector3.right,
                         Vector3.forward, -90f, sideRot));
+                playerState.x++;
                 
             }
-           
+            playerState.checkColor();
         }
         
     }
@@ -73,13 +82,43 @@ public class PlayerMove : MonoBehaviour
 
         float timeElapsed = 0f;
 
-         while (timeElapsed < duration)
+         while (timeElapsed < .5*duration)
          {
              transform.RotateAround(pivot, axis, angle/duration*Time.deltaTime);
              timeElapsed += Time.deltaTime;
 
+
             yield return null;
          }
+
+
+        while (timeElapsed <  duration)
+        {
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                pressed = (int)KeyCode.UpArrow;
+            }
+            else if (Input.GetKey(KeyCode.DownArrow))
+            {
+                pressed = (int)KeyCode.DownArrow;
+
+            }
+            else if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                pressed = (int)KeyCode.LeftArrow;
+
+            }
+            else if (Input.GetKey(KeyCode.RightArrow))
+            {
+                pressed = (int)KeyCode.RightArrow;
+
+            }
+            transform.RotateAround(pivot, axis, angle / duration * Time.deltaTime);
+            timeElapsed += Time.deltaTime;
+
+
+            yield return null;
+        }
 
 
 
@@ -91,7 +130,7 @@ public class PlayerMove : MonoBehaviour
                                        0f,
                                        Mathf.Round(transform.position.z));
 
-        isRolling = false;
+        
 
         int temp = sides[sideRot[0]];
 
@@ -100,6 +139,10 @@ public class PlayerMove : MonoBehaviour
             sides[sideRot[(i + 1) % 4]] = sides[sideRot[i]];
         }
         sides[sideRot[1]] = temp;
+
+        isRolling = false;
+
+        pressed = -1;
 
 
     }

@@ -5,18 +5,24 @@ using UnityEngine;
 
 public class TileMap : MonoBehaviour
 {
+
+    
+
     public int width;
     public int height;
     private float tileSize = 1.0f;
     public int tileRes;
 
     public Texture2D colors;
-    // Start is called before the first frame update
+    private int[,] tiles; 
+
+
     void Start()
     {
         buildMesh();
         buildTexture();
-        
+        tiles = new int[width, height];
+
     }
 
     // Update is called once per frame
@@ -92,30 +98,32 @@ public class TileMap : MonoBehaviour
         {
             for(int x = 0; x<width; x++)
             {
-                int select = (int)Random.Range(0, 6);
+                int select = (int)Random.Range(0, 7);
                 Color[] p = colors.GetPixels(select*tileRes, 0, tileRes, tileRes);
                 tex.SetPixels(x * tileRes, y * tileRes, tileRes, tileRes, p);
             }
         }
 
+        
+        MeshRenderer mr = GetComponent<MeshRenderer>();
+        mr.sharedMaterials[0].mainTexture = tex;
+        setTransparent(mr.sharedMaterials[0]);
+
         tex.filterMode = FilterMode.Point;
         tex.wrapMode = TextureWrapMode.Clamp;
         tex.Apply();
-        MeshRenderer mr = GetComponent<MeshRenderer>();
-        mr.sharedMaterials[0].mainTexture = tex;
+    }
+
+    void setTransparent(Material material)
+    {
+        material.SetOverrideTag("RenderType", "Transparent");
+        material.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.One);
+        material.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+        material.SetInt("_ZWrite", 0);
+        material.DisableKeyword("_ALPHATEST_ON");
+        material.DisableKeyword("_ALPHABLEND_ON");
+        material.EnableKeyword("_ALPHAPREMULTIPLY_ON");
+        material.renderQueue = (int)UnityEngine.Rendering.RenderQueue.Transparent;
     }
 }
 
-/*
- * 
- * 
- * int index = (int)Random.Range(0, 6);
-                Color[] p = colors.GetPixels(0, 0, tileRes , tileRes);
-
-                tex.SetPixels(x*tileRes, y*tileRes, tileRes, tileRes, p);
- * 
- * 
- * 
- * 
- * 
- * */
