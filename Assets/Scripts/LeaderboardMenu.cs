@@ -11,8 +11,14 @@ public class LeaderboardMenu : MonoBehaviour
 
     private void Start()
     {
-        AddScore("Henry", 7);
+        AddScore("George", 5);
     }
+
+    private void Update()
+    {
+        GetLeaderboard();
+    }
+
 
     // Add a new score
     void AddScore(string name, int score)
@@ -57,7 +63,7 @@ public class LeaderboardMenu : MonoBehaviour
 
     void OnDisplayNameUpdate(UpdateUserTitleDisplayNameResult result)
     {
-        GetLeaderboard();
+        Debug.Log("Title updated");
     }
 
     void GetLeaderboard()
