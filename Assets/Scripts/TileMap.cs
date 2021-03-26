@@ -6,22 +6,22 @@ using UnityEngine;
 public class TileMap : MonoBehaviour
 {
 
-    
-
     public int width;
     public int height;
     private float tileSize = 1.0f;
     public int tileRes;
 
-    public Texture2D colors;
-    private int[,] tiles; 
+    public Texture2D colorMap;
+    public int[,] colors;
+    public bool[,] complete;
 
 
     void Start()
     {
         buildMesh();
         buildTexture();
-        tiles = new int[width, height];
+        colors = new int[width, height];
+        complete = new bool[width, height];
 
     }
 
@@ -99,7 +99,7 @@ public class TileMap : MonoBehaviour
             for(int x = 0; x<width; x++)
             {
                 int select = (int)Random.Range(0, 7);
-                Color[] p = colors.GetPixels(select*tileRes, 0, tileRes, tileRes);
+                Color[] p = colorMap.GetPixels(select*tileRes, 0, tileRes, tileRes);
                 tex.SetPixels(x * tileRes, y * tileRes, tileRes, tileRes, p);
             }
         }

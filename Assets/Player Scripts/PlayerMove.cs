@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    private GameScript playerState;
 
     private bool isRolling = false;
     private float duration;
@@ -18,6 +17,9 @@ public class PlayerMove : MonoBehaviour
 
     private int pressed;
 
+    public int x = 0;
+    public int y = 5;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +28,10 @@ public class PlayerMove : MonoBehaviour
         sides = new int[] { 0, 1, 2, 3, 4, 5 };
         pressed = -1;
 
-        playerState = this.GetComponent<GameScript>();
+        transform.position.Set(transform.position.x + x
+            , transform.position.y, transform.position.z+y);
+        ;
+
     }
 
     // Update is called once per frame
@@ -41,14 +46,14 @@ public class PlayerMove : MonoBehaviour
                 int[] sideRot = new int[] { 0, 3, 5,1 };
                 StartCoroutine(rotateAbout(transform.position + scale * Vector3.forward,
                     Vector3.right, 90f, sideRot));
-                playerState.y--;
+                y--;
             }
             else if (Input.GetKey(KeyCode.DownArrow) || pressed == (int)KeyCode.DownArrow)
             { 
                 int[] sideRot = new int[] { 0, 1, 5, 3 };
                 StartCoroutine(rotateAbout(transform.position + scale * Vector3.back,
                         Vector3.right, -90f, sideRot));
-                playerState.y++;
+                y++;
                 
             }
             else if (Input.GetKey(KeyCode.LeftArrow) || pressed == (int)KeyCode.LeftArrow)
@@ -56,7 +61,7 @@ public class PlayerMove : MonoBehaviour
                 int[] sideRot = new int[] { 0, 4, 5, 2 };
                 StartCoroutine(rotateAbout(transform.position + scale * Vector3.left,
                     Vector3.forward, 90f, sideRot));
-                playerState.x--;
+                x--;
                 
             }
             else if (Input.GetKey(KeyCode.RightArrow) || pressed == (int)KeyCode.RightArrow)
@@ -64,10 +69,9 @@ public class PlayerMove : MonoBehaviour
                 int[] sideRot = new int[] { 0, 2, 5, 4 };
                 StartCoroutine(rotateAbout(transform.position + scale * Vector3.right,
                         Vector3.forward, -90f, sideRot));
-                playerState.x++;
+                x++;
                 
             }
-            playerState.checkColor();
         }
         
     }
