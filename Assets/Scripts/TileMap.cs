@@ -13,7 +13,7 @@ public class TileMap : MonoBehaviour
 
     public Texture2D colorMap;
     public int[,] colors;
-    public bool[,] complete;
+    
 
 
     void Start()
@@ -21,7 +21,7 @@ public class TileMap : MonoBehaviour
         buildMesh();
         buildTexture();
         colors = new int[width, height];
-        complete = new bool[width, height];
+        
 
     }
 
@@ -88,7 +88,7 @@ public class TileMap : MonoBehaviour
         mc.sharedMesh = m;
     }
 
-    void buildTexture()
+    public void buildTexture()
     {
         Texture2D tex = new Texture2D(tileRes * width, tileRes * height);
         Debug.Log(tex.width);
@@ -98,8 +98,7 @@ public class TileMap : MonoBehaviour
         {
             for(int x = 0; x<width; x++)
             {
-                int select = (int)Random.Range(0, 7);
-                Color[] p = colorMap.GetPixels(select*tileRes, 0, tileRes, tileRes);
+                Color[] p = colorMap.GetPixels(colors[y, x]*tileRes, 0, tileRes, tileRes);
                 tex.SetPixels(x * tileRes, y * tileRes, tileRes, tileRes, p);
             }
         }

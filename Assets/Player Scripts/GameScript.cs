@@ -7,9 +7,15 @@ public class GameScript : MonoBehaviour
 
     private PlayerMove player;
     public TileMap tiles;
+    public TileMap target;
     public int completion;
     public int done;
     public int numTiles;
+
+    public int moves;
+
+    public Texture2D colorMap;
+
 
     public int lives;
 
@@ -33,35 +39,33 @@ public class GameScript : MonoBehaviour
         }
         else
         {
-            if(player.x<0 || player.x> tiles.width ||player.y<0 ||player.y>tiles.height||
-                tiles.colors[player.x, player.y]==-1)
-            {
-                lives--;
-                reset();
-            }
-            else if (player.getColorInt(5) == tiles.colors[player.x, player.y]
-            && !tiles.complete[player.x, player.y])
-            {
-                tiles.complete[player.x, player.y] = true;
-                done++;
-                
-            }
-
-            else if (player.getColorInt(5) != tiles.colors[player.x, player.y]
-            && tiles.complete[player.x, player.y])
-            {
-                tiles.complete[player.x, player.y] = false;
-                done--;
-            }
-            completion = done * 10000 / numTiles;
-
 
         }
         
     }
+    public void checkColor()
+    {
+        if(player.x>=0 && player.y>=0 && player.x<target.width && player.y < target.height)
+        {
+            if (target.colors[player.y, player.x] != -1)
+            {
+                if (target.colors[player.y, player.x] != tiles.colors[player.y, player.x] && 
+                    player.getColorInt(5) == target.colors[player.y, player.x]) done++;
+                else if(target.colors[player.y, player.x] == tiles.colors[player.y, player.x] &&
+                    player.getColorInt(5) != target.colors[player.y, player.x]) done--;
+            }
+
+            tiles.colors[player.y, player.x] = player.getColorInt(5);
+        }
+
+        tiles.buildTexture();
+
+        completion = done * 10000 / numTiles;
+    }
+
 
     public void reset()
     {
-
+        player.reset();
     }
 }

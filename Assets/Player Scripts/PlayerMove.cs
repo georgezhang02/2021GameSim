@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-
+    private GameScript game;
     private bool isRolling = false;
     private float duration;
     private float scale;
@@ -15,14 +15,22 @@ public class PlayerMove : MonoBehaviour
 
     public Texture colors;
 
+    public bool falling;
+
     private int pressed;
 
     public int x = 0;
     public int y = 5;
 
+    private int ogX;
+    private int ogY;
+
     // Start is called before the first frame update
     void Start()
     {
+        ogX = x;
+        ogY = y;
+
         scale = transform.localScale.x / 2;
         duration = 0.25f;
         sides = new int[] { 0, 1, 2, 3, 4, 5 };
@@ -30,7 +38,9 @@ public class PlayerMove : MonoBehaviour
 
         transform.position.Set(transform.position.x + x
             , transform.position.y, transform.position.z+y);
-        ;
+        falling = false;
+
+        game = this.GetComponent<GameScript>();
 
     }
 
@@ -39,38 +49,56 @@ public class PlayerMove : MonoBehaviour
     {
         
 
-        if (!isRolling)
+        if (!isRolling && !falling)
         {
             if (Input.GetKey(KeyCode.UpArrow) || pressed == (int)KeyCode.UpArrow)
             {
                 int[] sideRot = new int[] { 0, 3, 5,1 };
+                y--;
                 StartCoroutine(rotateAbout(transform.position + scale * Vector3.forward,
                     Vector3.right, 90f, sideRot));
-                y--;
+                
             }
             else if (Input.GetKey(KeyCode.DownArrow) || pressed == (int)KeyCode.DownArrow)
-            { 
+            {
+                
                 int[] sideRot = new int[] { 0, 1, 5, 3 };
+                y++;
                 StartCoroutine(rotateAbout(transform.position + scale * Vector3.back,
                         Vector3.right, -90f, sideRot));
-                y++;
+                
                 
             }
             else if (Input.GetKey(KeyCode.LeftArrow) || pressed == (int)KeyCode.LeftArrow)
             {
                 int[] sideRot = new int[] { 0, 4, 5, 2 };
+                x--;
                 StartCoroutine(rotateAbout(transform.position + scale * Vector3.left,
                     Vector3.forward, 90f, sideRot));
-                x--;
+                
                 
             }
             else if (Input.GetKey(KeyCode.RightArrow) || pressed == (int)KeyCode.RightArrow)
             {
                 int[] sideRot = new int[] { 0, 2, 5, 4 };
+                x++;
                 StartCoroutine(rotateAbout(transform.position + scale * Vector3.right,
                         Vector3.forward, -90f, sideRot));
-                x++;
                 
+                
+            }
+        } else if (!isRolling && falling)
+        {
+            if (transform.position.y > -20f)
+            {
+                transform.position.Set(transform.position.x,
+                    transform.position.y - 20f / 100000f * Time.deltaTime,
+                    transform.position.z);
+            }
+            else
+            {
+                falling = false;
+                game.reset();
             }
         }
         
@@ -148,13 +176,26 @@ public class PlayerMove : MonoBehaviour
 
         pressed = -1;
 
+        game.checkColor();
+        game.moves++;
+
 
     }
+
+    
 
     public int getColorInt(int side)
     {
         return colorInt[sides[side]];
     }
 
-    
+    public void reset()
+    {
+        x = ogX;
+        y = ogY;
+        transform.eulerAngles = new Vector3(0, 0 , 0);
+        Start();
+    }
+
+
 }
