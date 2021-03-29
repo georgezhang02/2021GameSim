@@ -194,7 +194,9 @@ public class PlayerMove : MonoBehaviour
         x = ogX;
         y = ogY;
         transform.eulerAngles = new Vector3(0, 0 , 0);
-        Start();
+        transform.position.Set(transform.position.x + x
+            , transform.position.y, transform.position.z + y);
+        falling = false;
     }
 
 

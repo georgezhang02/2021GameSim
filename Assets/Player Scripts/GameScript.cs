@@ -8,6 +8,7 @@ public class GameScript : MonoBehaviour
     private PlayerMove player;
     public TileMap tiles;
     public TileMap target;
+    public GameObject playerRef;
     public int completion;
     public int done;
     public int numTiles;
@@ -23,6 +24,7 @@ public class GameScript : MonoBehaviour
     void Start()
     {
         player= this.GetComponent<PlayerMove>();
+        
         done = 0;
     }
 
@@ -67,5 +69,8 @@ public class GameScript : MonoBehaviour
     public void reset()
     {
         player.reset();
+        playerRef.GetComponent<RefRot>().reset();
+
+        
     }
 }
